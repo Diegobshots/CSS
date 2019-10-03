@@ -1,0 +1,25 @@
+/* Estilacos pepinacos */
+
+body{
+    background-color: grey;
+    font: 10px verdana;
+
+}
+.naranja{
+    color: orange;
+    background-color: blue;;
+}
+.consola{
+    font: courier;
+    color: green;
+    background-color: black;
+}
+.importante{
+    color: green;
+    background-color: yellow;
+    text-decoration: none;
+}
+#titulo{
+    font: 40pt verdana;
+    color: darkgray;
+}
