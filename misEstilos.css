@@ -23,3 +23,24 @@ body{
     font: 40pt verdana;
     color: darkgray;
 }
+a:visited{
+    color:red;
+}
+a:hover{
+    background-color: purple;
+}
+#cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+#cuadrado:active{
+    background-color: aqua;
+}
+p:first-line{
+    color:red;
+}
+p::first-letter{
+    font-size:  30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
