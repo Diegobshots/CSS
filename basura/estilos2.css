@@ -1,0 +1,38 @@
+tbody tr:nth-child(odd){background-color:lightgray;}
+tbody tr:nth-child(even){background-color:lightskyblue;}
+td:first-child{
+    color:red;
+
+}
+td{
+    padding: 8px;
+}
+td:hover {
+    background-color: darkorange;
+}
+tbody tr:hover{
+    background-color: bisque;
+}
+thead{
+    background-color: beige
+}
+#cuadro{
+    margin: auto;
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: chocolate;
+    border-top-width: 10px;
+    border-left-width: 10px;
+    border-bottom-color: rgb(77, 14, 14);
+    border-right-color: rgb(77, 14, 14);
+    border-style: solid;
+    
+}
+#cuadro:hover{
+    background-color: rgb(168, 19, 19);
+}
+
