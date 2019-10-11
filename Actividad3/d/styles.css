@@ -1,0 +1,30 @@
+#cont1{
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    
+    width: 350px;
+    height: 70px;
+    padding: 3%;
+    
+    margin: 5%;
+}
+#cont2{
+   
+    text-align: center;
+    border-width: 3px;
+    border-style: dotted;
+    border-color: black;
+    
+    
+    
+}
+#cont1:hover{
+    border-color: blue;
+    border-width: 20px;
+    background-color: black;
+    color: white;
+    transition: 0.5s ;
+    
+    
+}
