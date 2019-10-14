@@ -1,0 +1,43 @@
+.contenedor{
+    margin: auto;
+    background-color: rgb(45, 45, 199);
+    width: 500px;
+    height: 500px;
+    background-image: url("img/cangrejo.png"), url("img/hola.jpg");
+    background-repeat: no-repeat;
+    background-position: right, center;
+    background-size: 50px 50px, 200px 200px;
+   
+}
+.contenedor:hover{
+    background-size: contain;
+    transition: 0.5s;
+}
+.contentbox{
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    border-style: dotted;
+    background-color: red;
+    background-clip: content-box;
+
+}
+.paddingbox{
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    border-style: dotted;
+    background-color: red;
+    background-clip: padding-box;
+}
+.borderbox{
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    border-style: dotted;
+    background-color: red;
+    background-clip: border-box;
+}
