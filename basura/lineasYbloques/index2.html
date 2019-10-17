@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            position: relative;
+        }
+        .texto1{
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            color: white;
+        }
+        .texto2{
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            color: white;
+        }
+        .texto3{
+            background-color: rgba(0,0,0,0.6);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+        }
+        .texto4{
+            position: absolute;
+            bottom: 3px;
+            left: 3px;
+            color: white;
+        }
+        .texto5{
+            position: absolute;
+            bottom: 3px;
+            right: 3px;
+            color: white;
+        }
+        div{
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="https://picsum.photos/id/1025/600/400" alt="puppy">
+        <div class="texto1">Top left</div>
+        <div class="texto2">top rigth</div>
+        <div class="texto3">center</div>
+        <div class="texto4">Bot left</div>
+        <div class="texto5">Bot right</div>
+
+    </div>
+</body>
+</html>
