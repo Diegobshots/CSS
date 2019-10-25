@@ -4,25 +4,66 @@ html, body{
     position: absolute;
     margin: 0px;
     padding: 0px;
+    background-color: #F5F5F5;
 
 }
 .cabecera{
+    position: -webkit-sticky;
     position: sticky;
+    top: 0px;
     height: 15%;
     width: 100%;
-    border: solid 1px black;
+    background-color:#F5F5F5;
+    color: whitesmoke;
+}
+ul{
+    position: relative;
+    text-align: center;
+    top: 25px;
+    
 }
 li{
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    margin: 3px;
+    padding: 3px;
+    display: inline;
+    border: 1px blacks solid;
+    border-radius: 50px;
+}
+li a{
+    color: #000;
+    padding: 8px 16px;
     text-decoration: none;
-    display: inline-block;
-    align-content: center;
 
 }
-#menu{
-    position: relative;
+a:hover{
+    text-decoration: underline;
+    background-color: rgb(184, 184, 184);
+    transition: 1s;
+}
+#logo{
+    position: absolute;
+    top: 20%;
+    left:2%;
+    width: 50px;
+}
+.seccion1{
+    height: 1000px;
+    background-color: #F5F5F5;
+    
+
+}
+.seccion1{
+    width: 100%;
+}
+#imagen1{
+    float: left;
+    width: 20%;
+}
+#texto1{
     float: right;
-    top: 50px;
+    width: 20%;
+}
+#imagen1 img{
+    width: 100%;
+    left: 30px;
 }
