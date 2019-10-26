@@ -1,83 +1,53 @@
-html, body{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    background-color: #F5F5F5;
-
+*{
+    margin: 0;
+    padding: 0;
 }
-.cabecera{
-    
-    position: sticky;
-    top: 0px;
-    height: 10%;
-    width: 100%;
-    background-color:rgba(245, 245, 245, 0.9);
-    color: whitesmoke;
+#lilogo{
+    float: left;
 }
 ul{
-    position: relative;
+    list-style-type: none;
+    overflow: hidden;
     text-align: center;
-    top: 25px;
     
 }
 li{
-    margin: 3px;
-    padding: 3px;
-    display: inline;
-    border: 1px blacks solid;
-    border-radius: 50px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Raleway', sans-serif;
+    
 }
-li a{
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-
-}
-a:hover{
-    text-decoration: underline;
-    background-color: rgb(184, 184, 184);
-    transition: 1s;
+li:not(:first-of-type){
+    margin-top: 20px;
 }
 #logo{
-    position: absolute;
-    top: 20%;
-    left:2%;
-    width: 50px;
-}
-.seccion1{
-    height: 1000px;
-    background-color: #F5F5F5;
+    width: 60px;
+    height: 60px;
     
-
+}
+li a{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+li a:hover{
+    
+    color: orangered;
+    transition: 0.5s;
+}
+header{
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    top: 0px;
+    position: sticky;
+    background-color: whitesmoke;
 }
 .seccion1{
-    width: 80%;
-    margin: 0 auto;
-}
-#imagen1{
-    float: left;
-    width: 50%;
-}
-#texto1{
-    padding-top:20%;
-    float: right;
-    width: 50%;
-    color:#757575;
-    font-size:6EM;
-    font-family: 'Big Shoulders Text', cursive;
-}
-#imagen1 img{
     width: 100%;
-    left: 30px;
-}
-#texto1 span{
-    color: #fd5d00;
-}
-#seccion2{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(29, 29, 29);
-    margin: 0 auto;
+    height: 700px;
+    background-color: white;
+    border: 1px black solid;
 }
