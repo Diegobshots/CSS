@@ -138,10 +138,10 @@ header{
 
 .seccion3{
     width: 100%;
-    height: 540px;
+    height: 900px;
     background-color: #242424;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 .foto3{
     float: left;
@@ -171,6 +171,14 @@ header{
     
 
     
+}
+.seccion3 .tituloSec3{
+    color: whitesmoke;
+    font-family: 'Annie Use Your Telescope';
+    
+    margin-bottom: 140px;
+    font-size: 4em;
+
 }
 
 .seccion3 p{
