@@ -155,7 +155,7 @@ header{
 .foto3:hover , .foto4:hover , .foto5:hover{
     height: 453px;
     width: 303px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .foto3 , .foto4 , .foto5{
     height: 450px;
