@@ -160,8 +160,6 @@ header{
 .foto3 , .foto4 , .foto5{
     height: 450px;
     width: 300px;
-    margin-right: 60px;
-    margin-left: 60px;
     border-radius: 20px 20px 20px 20px;
     -moz-border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
@@ -171,6 +169,12 @@ header{
     
 
     
+}
+.foto3{
+    margin-left: 85px;
+}
+.foto5{
+    margin-right: 85px;
 }
 .seccion3 .tituloSec3{
     color: whitesmoke;
