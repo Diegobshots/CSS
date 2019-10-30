@@ -131,6 +131,7 @@ header{
     margin-left: 35%;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
+    font-weight: bold;
 }
 
 /* TERCERA SECCION */
@@ -151,6 +152,9 @@ header{
 }
 .foto5{
     float: right;
+}
+.foto3, .foto4, .foto5{
+    transition: 0.2s;
 }
 .foto3:hover , .foto4:hover , .foto5:hover{
     height: 453px;
@@ -185,10 +189,10 @@ header{
 
 }
 
-.seccion3 p{
+.seccion3 .letraEstilo{
     margin-top: 20px;
 }
-.seccion3  img{
+.foto4 img, .foto3 img, .foto5  img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     -moz-border-radius: 20px 20px 0px 0px;
@@ -197,3 +201,29 @@ header{
 }
 
 
+/* logo fijado flotante */
+
+.flotante{
+    position: fixed;
+    right: -148px;
+    width: 200px;
+    bottom: 30px;
+    background-color: #c93315;
+    transition: 0.3s;
+}
+.flotante .logoplus{
+    width: 50px;
+    float:left;
+}
+.flotante .letraPlus{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-right: 17px;
+    margin-top: 2px;
+}
+.flotante:hover{
+    right: 0px;
+    cursor: pointer;
+    transition: 0.9S ease;
+}
