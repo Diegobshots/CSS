@@ -10,16 +10,21 @@
     <title>Ejercicio e</title>
 
     <style>
+        *{
+            box-sizing: border-box;
+        }
         html, body{
             height: 100%;
             padding: 0px;
             width: 100%;
             margin: 0;
+            position: relative;
+            background-color: rgb(29, 29, 29);
+
         }
         
         .fotos{
-            margin-left: 25%;
-            width: 100%;
+            margin-left: 20%;
             height: 100%;
             
         }
@@ -28,28 +33,34 @@
         }
         ul{
             
-           list-style-type: none;
+            list-style-type: none;
             position: fixed;
             margin: 0px;
-
+            height: 100%;
             top: 0;
             height: 100%;
-            width: 25%;
+            width: 20%;
             padding: 0;
         }
         
         li{
+            padding-left: 5px;
+
             background-color: rgb(29, 29, 29);
-            border: 1px solid black;
+            border: 0px solid rgb(29, 29, 29);
             width: 100%;
             margin-left: 0;
             font-size: 2em;
             color:rgb(141, 141, 141);
             padding-top: 10px;
             padding-bottom: 10px;
+            transition: 0.5s ease;
         }
         li:hover{
-
+            border-right: orangered 15px solid;
+            
+            border-left: rgb(29, 29, 29) 25px solid;
+            transition: 0.3s ease;
         }
         a{text-decoration: none;
         }
@@ -57,25 +68,25 @@
 </head>
 <body>
     <ul>
-        <a href=""><li><i class="fas fa-address-card"></i>
+        <a href="c.html"><li><i class="fas fa-address-card"></i>
             SIDEBAR
         </li></a>
-        <a href=""><li><i class="fas fa-air-freshener"></i>
+        <a href="c2.html"><li><i class="fas fa-air-freshener"></i>
             Dashboard
         </li></a>
-        <a href=""><li><i class="fab fa-amazon"></i>
+        <a href="c3.html"><li><i class="fab fa-amazon"></i>
             Statistics
         </li></a>
-        <a href=""><li><i class="fas fa-apple-alt"></i>
+        <a href="c4.html"><li><i class="fas fa-apple-alt"></i>
             Milestones
         </li></a>
-        <a href=""><li><i class="fab fa-android"></i>
+        <a href="c5.html"><li><i class="fab fa-android"></i>
             Experiments
         </li></a>
     </ul>
     
     <div class="fotos">
-        <img src="https://picsum.photos/id/211/600/400" alt="">
+        <img src="https://picsum.photos/id/1020/600/400" alt="">
     </div>
    
    
