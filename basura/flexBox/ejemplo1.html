@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body, html{
+            padding: 0;
+            margin: 0;
+        }
+        .contenedor{
+            background-color: green;
+            height: 200px;
+            display: flex;
+            /*flex-wrap: wrap;*/
+            /*justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: center;*/
+            align-content: center;
+           
+            
+        }
+        
+        .item{
+            background-color: pink;
+            font-size: 30px;
+            margin: 10px;
+            padding: 20px;
+
+            flex-grow: 1;
+
+        }
+        #item3{
+            /*align-self: flex-start;*/
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="item">
+            1
+        </div>
+        <div class="item">
+            2
+        </div>
+        <div class="item" id="item3">
+            3
+        </div>
+       
+      
+    </div>
+    
+</body>
+</html>
