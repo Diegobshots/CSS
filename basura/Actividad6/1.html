@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+    <style>
+        body, html, p{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .contenedor{
+            background-color: grey;
+        }
+        .cabecera{
+            display: flex;
+            background-color: rgb(41, 41, 41);
+            height: 40px;
+            width: 100%;
+            color: white;
+            padding: 4px;
+        }
+        .contenido{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contenido .foto1, .foto2, .foto3, .foto4, .foto5{
+            width: 190px;
+            height: 100px;
+            
+
+        }
+        .foto1{
+            background-image: url("https://picsum.photos/id/1076/600/400");
+            background-size: cover;
+        }
+        .foto2{
+            background-image: url("https://picsum.photos/id/1081/600/400");
+            background-size: cover;
+        }
+        .foto3{
+            background-image: url("https://picsum.photos/id/743/600/400");
+            background-size: cover;
+        }
+        .foto4{
+            background-image: url("https://picsum.photos/id/870/600/400");
+            background-size: cover;
+        }
+        .foto5{
+            background-image: url("https://picsum.photos/id/945/600/400");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="cabecera">
+            <p>FLEXBOX: CATALOGO DE IMAGENES<p>
+        </div>
+        <div class="contenido">
+            <div class="foto1"></div>
+            <div class="foto2"></div>
+            <div class="foto3"></div>
+            <div class="foto4"></div>
+            <div class="foto5"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
