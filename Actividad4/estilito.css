@@ -1,0 +1,37 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    
+}
+.contenedor{
+    background-color: #00c2c2;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.subcontenedor{
+    margin-top: 5%;
+    height: 500px;
+    width: 350px;
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.49);
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.49);
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(35deg, rgb(0, 132, 255), rgb(0, 255, 179));
+    
+}
+.trianguloInvert{
+    margin-top: 20%;
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    transform: rotate(180deg);
+    width: 200px;
+    height: 180px;
+    background-image: linear-gradient(to right,rgba(255,255,255, 0.9), rgba(255,255,255, 0.1));
+
+}
+.triangulo{
+    
+}
