@@ -9,9 +9,11 @@ body, html{
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 .subcontenedor{
-    margin-top: 5%;
+    position: relative;
+    margin-top: 1%;
     height: 500px;
     width: 350px;
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.49);
@@ -28,10 +30,16 @@ body, html{
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
     transform: rotate(180deg);
     width: 200px;
-    height: 180px;
+    height: 170px;
     background-image: linear-gradient(to right,rgba(255,255,255, 0.9), rgba(255,255,255, 0.1));
 
 }
 .triangulo{
-    
+    position: absolute;
+    top: 14%;
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    width: 200px;
+    height: 170px;
+    background-image: linear-gradient(to left,rgb(0, 132, 255), rgb(0, 255, 179));
 }
