@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        body {
+            background: #eee;
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 3px 5px #ddd;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .caja {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background: #ddd;
+            cursor: pointer;
+            perspective: 300px;
+        }
+
+        .relleno {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            opacity: .5;
+            transition: 0.5s ease;
+        }
+
+        p {
+            margin: 25px 0 0;
+        }
+        .translate:hover{
+            transform: translate(50px, 50px);
+        }
+        .scale:hover{
+            transform: scale(1.3);
+        }
+        .rotate45:hover{
+            transform: rotate(45deg);
+        }
+        .rotate360:hover{
+            transform: rotate(360deg);
+        }
+        .rellenoOrigen {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            opacity: .5;
+            transition: 0.5s ease;
+            transform-origin: right bottom;
+        }
+        .transformOrigen:hover {
+            transform: rotate(180deg);
+        }
+        .skew:hover {
+            transform: skew(45deg);
+        }
+        .mix:hover{
+            transform: scaleZ(2) rotateX(180deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno translate"></div>
+                <p>translate</p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno scale"></div>
+                <p>scale</p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno rotate45"></div>
+                <p>rotate 45</p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno rotate360"></div>
+                <p>rotate 360</p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="rellenoOrigen transformOrigen"></div>
+                <p>transform origen</p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno skew"></div>
+                <p>skew</p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="caja">
+                <div class="relleno mix"><img src="https://picsum.photos/id/377/100/100" alt=""></div>
+                <p>skew</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
