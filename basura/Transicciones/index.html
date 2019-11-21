@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+        }
+        .contenedor{
+            display:flex;
+            justify-content: space-around;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            background-color: rgb(190, 190, 190);
+        }
+        .bloque1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: animacion1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        .bloque1:hover{
+            animation: 1.7s bote ease infinite;
+        }
+        @keyframes animacion1{
+            from{
+                background-color: tomato;
+            }
+            to{
+                background-color: green;
+            }
+        }
+        @keyframes bote{
+            20%,
+            50%,
+            80%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            65%{
+                transform: translateY(-15px);
+            }
+        }
+        .bloque2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(58, 43, 199);
+            animation-name: voltio;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            position: relative;
+            
+            
+        }
+        .bloque3{
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        }
+        .bloque3 img{
+            transition: 0.5s ease;
+        }
+        .bloque3 img:hover{
+            transform: scale(1.5);
+            transition: 0.5s ease;
+        }
+        @keyframes voltio {
+            0%{
+                bottom: 0;
+                right: 0;
+            }
+            25%{
+                bottom: 200px;
+                right: 0;
+            }
+            50%{
+                bottom: 200px;
+                right: 200px;
+            }
+            75%{
+                bottom: 0px;
+                right: 200px;
+            }
+            100%{
+                bottom: 0;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="bloque1"></div>
+        <div class="bloque2"></div>
+        <div class="bloque3"><img src="https://picsum.photos/id/431/600/400" alt=""></div>
+    </div>
+</body>
+</html>

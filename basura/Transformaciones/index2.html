@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tarjeta{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            transition: width 2s, height 2s, background-color 5s;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            border: 0px solid #000000;
+        }
+        .hoja{
+            width:1px;
+            height:1px;
+            border-bottom:100px solid #8AC007;
+            border-left:55px solid transparent;
+            border-right:55px solid transparent;
+        }
+        .hoja:before{
+            content:"";
+            display:block;
+            width:1px;
+            height:1px;
+            border-top:100px solid #8AC007;
+            border-left:55px solid transparent;
+            border-right:55px solid transparent;
+            position:relative;
+            bottom:-30px/*30%*/;
+            left:-55px/*55%*/;}
+        .tarjeta:hover{
+            background-color: tomato;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">  
+        <div class="tarjeta">
+                <div class="hoja"></div>
+        </div>
+    </div>
+</body>
+</html>
