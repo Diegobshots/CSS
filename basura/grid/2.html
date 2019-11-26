@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: 1fr 5fr 1fr;
+            grid-template-areas: "head head head"
+                                 "menu main main"
+                                 "foot foot foot";
+        }
+        .grid-item{
+            font-size: 2em;
+            text-align: center;
+        }
+        .a{
+            grid-area: head;
+            background-color: pink;
+        }
+        .b{
+            grid-area: menu;
+            background-color: red;
+        }
+        .c{
+            grid-area: main;
+            background-color: blue;
+        }
+        .d{
+            grid-area: foot;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item a">1</div>
+        <div class="grid-item b">2</div>
+        <div class="grid-item c">3</div>
+        <div class="grid-item d">4</div>
+    </div>
+</body>
+</html>
