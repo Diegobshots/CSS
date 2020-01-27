@@ -1,0 +1,33 @@
+html, body{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+   
+}
+.zona1, .zona2, .zona3, .zona4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.editada1, .editada2, .editada3, .editada4{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    overflow: hidden;
+}
