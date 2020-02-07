@@ -1,6 +1,8 @@
 /* #f5f5f5  */
 
 html, body{
+    margin: 0;
+    padding: 0;
     background-color: #f7f7f7;
     height: 1000px;
 }
@@ -22,3 +24,44 @@ html, body{
 .textoGrande{
     font-size: 80px;
 }
+.menu{
+    z-index: 1;
+    background-color: #f7f7f7 !important ; 
+    
+}
+.lupa:hover{
+    color: #e539b1;
+}
+.seccion1izq{
+    background-color: #feb6b9;
+    
+    
+    border-radius: 0px 200px 0px 200px;
+    -moz-border-radius: 0px 200px 0px 200px;
+    -webkit-border-radius: 0px 200px 0px 200px;
+    border: 0px solid #000000;
+}
+.seccion1der{
+    color: #feb6b9;
+    height: 20vh !important;
+}
+
+.seccion1{
+    height: 100vh;
+}
+.cursor {
+  
+    animation-name: parpadeo;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+@keyframes parpadeo {  
+    50% { opacity: 0.0; }
+  }
+
