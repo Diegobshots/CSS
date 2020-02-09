@@ -3,9 +3,10 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #fae4d9;
     height: 1000px;
-    cursor: none;
+    /*cursor: none;*/
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .btn:hover{
@@ -14,12 +15,14 @@ html, body{
     background-color: #e081c4;
 }
 .logo{
-    width: 90px;
+    width: 150px;
+    margin-left: 2em;
+    -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
 }
 
-.spanRosa{
-    color: #e539b1;
-}
+
 .textoGrande{
     font-size: 80px;
 }
@@ -35,14 +38,18 @@ html, body{
     -moz-border-radius: 0px 200px 0px 200px;
     -webkit-border-radius: 0px 200px 0px 200px;
     border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
 }
 .seccion1der{
     color: #feb6b9;
+    padding-right: 80px ;
     height: 20vh !important;
 }
 
 .seccion1{
-    height: 100vh;
+    height: 30vh;
 }
 .escritura {
   
@@ -65,7 +72,8 @@ html, body{
 .cursor{
     width: 1rem;
     height: 1rem;
-    border: 2px solid #feb6b9;;
+    border: 2px solid #feb6b9;
+    background-color: #bbded7;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -78,10 +86,14 @@ html, body{
 }
 .nav-item{
     z-index: 3;
+    font-size: 15px;
 }
 .link-crece{
     transform: scale(5);
-    background-color: #feb6b9;;
+    background-color: #feb6b9;
+    -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
 }
 .hovered-link{
     color: white !important;
@@ -89,5 +101,23 @@ html, body{
 }
 .nav-item{
     transition: .5s all ease;
+    color: #61bfbf;
 }
-
+.tarjeta1{
+    width: 15vw;
+    -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+}
+.btn{
+    border-color: #61bfbf;
+    background-color:#bbded7;
+}
+/*.forma{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 0;
+    background-color: #fff;
+}*/
