@@ -3,11 +3,11 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #fae4d9;
-    height: 1000px;
-    /*cursor: none;*/
+    height: auto;
+    cursor: none;
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 
 .btn:hover{
     border-color: #e539b1;
@@ -15,11 +15,9 @@ html, body{
     background-color: #e081c4;
 }
 .logo{
-    width: 150px;
+    width: 120px;
     margin-left: 2em;
-    -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
+    
 }
 
 
@@ -104,14 +102,20 @@ html, body{
     color: #61bfbf;
 }
 .tarjeta1{
-    width: 15vw;
+    width: 23vw;
     -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
 }
 .btn{
-    border-color: #61bfbf;
+    border-color: #bbded7;
     background-color:#bbded7;
+}
+.textoTarjeta{
+    background-color: #bbded7;
+}
+.imgTarjeta{
+    overflow: hidden;
 }
 /*.forma{
     position: absolute;
