@@ -69,13 +69,15 @@ html, body{
 /* CURSOR PERSONALIZADO */
 
 .cursor{
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid #505050;
-    background-color: #bbded700;
-    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    clip-path: polygon(74% 86%, 43% 78%, 23% 100%, 22% 58%, 20% 0, 51% 49%);
+
+    background-color: #366d6d;
+    border: 2px solid #366d6d;
+
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, -8%);
     pointer-events: none;
     transition: .3s all ease;
     transition-property: background, transform;
@@ -88,7 +90,11 @@ html, body{
     font-size: 15px;
 }
 .link-crece{
-    transform: scale(5);
+    transform: scale(4);
+    clip-path: circle(50% at 50% 50%);
+    border: 2px solid #505050;
+    background-color: #bbded700;
+    border-radius: 50%;
     background-color: #feb6b9;
     border-color: #feb6b9;
     -webkit-box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
@@ -110,10 +116,7 @@ html, body{
     box-shadow: 10px 10px 72px -49px rgba(0,0,0,0.75);
     overflow: hidden;
 }
-.btn{
-    border-color: #bbded7;
-    background-color:#bbded7;
-}
+
 .textoTarjeta2{
     background-color: #ffc37d;
 }
@@ -175,3 +178,14 @@ box-shadow: -4px 10px 39px -15px rgba(0,0,0,0.75);
 box-shadow: 12px 20px 39px -15px rgba(0,0,0,0.75);
     
 }
+.social{
+    transition: .3s all ease;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.social:hover{
+    padding-left: 10em;
+    padding-right: 10em;
+    transition: .3s all ease;
+}
+
