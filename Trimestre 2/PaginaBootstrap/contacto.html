@@ -25,8 +25,8 @@
 
   <!-- ######################### MENU DE NAVEGACION ########################## -->
 
-  <nav class="navbar navbar-expand-md navbar-light menu justi">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-md navbar-light menu ">
+    <a class="navbar-brand">
       <img src="img/logo.PNG" alt="" class="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -36,100 +36,79 @@
 
     <div class="collapse navbar-collapse  " id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto  ">
-        <li class="nav-item home pt-4 px-3 " href='#'>
+        <li class="nav-item home pt-5 px-3 " href='#'>
           HOME
         </li>
-        <li class="nav-item contact pt-4 pb-5 px-3 sub">
+        <li class="nav-item contact sub pt-5 pb-5 px-3">
           CONTACTO
         </li>
 
-        <li class="nav-item pt-4 pb-5 px-3">
+        <li class="nav-item pt-5 pb-5 px-3">
           SERVICIOS
         </li>
 
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item pt-4 pb-5 ">
+        <li class="nav-item pt-5 pb-5 ">
           <i class="fas fa-search lupa "></i>
         </li>
-        <li class="nav-item pt-4 pb-5 px-4">
+        <li class="nav-item pt-5 pb-5 px-4">
           SITE SEARCH
         </li>
       </ul>
 
+
     </div>
   </nav>
 
-  <!--################################################# Seccion 1 ####################################################-->
-  <section class="seccion1">
-    <div class="container-fluid">
-      <div class="row">
-        <div
-          class="col-lg-8  col-sm-7 col-xs-12  h-100 seccion1izq text-white py-lg-3 py-sm-1 py-md-1 w-100 pr-5 ">
-          <h1 class="textoGrande float-right my-auto py-5 ">Diseño</h1>
-        </div>
-        <div class="col-lg-4  col-sm-5 col-xs-12 text-justify w-100 py-3  h-100 seccion1der ">
-          <h1 class="textoGrande py-5 mx-sm-auto">.Web<span class="escritura">|</span></h1>
-        </div>
-      </div>
-    </div>
+  <!--################################################# Seccion contacto ####################################################-->
 
-  </section>
-
-
-
-  <!--################################################# Tarjetas ####################################################-->
-  <section class="tarjetas pb-5">
-
-    <div class="container pt-5 mt-5 px-5">
-      <div class="row justify-content-lg-between">
-        <div class="card tarjeta1 ">
-          <img class="card-img-top " src="img/responsive1.jpg">
-          <div class="card-body">
-            <div class="card-text">
-              <p>Lorem ipsum dolor sit amet
-              </p>
-
-            </div>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-          </div>
-        </div>
-        <div class="card tarjeta1 ">
-          <img class="card-img-top imgTarjeta" src="img/responsive2.jpg">
-          <div class="card-body textoTarjeta">
-            <div class="card-text ">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore quis corrupti.
-                Laboriosam
-                asperiores debitis
-              </p>
-
-            </div>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-          </div>
-        </div>
-        <div class="card tarjeta1">
-          <img class="card-img-top" src="img/responsive1.jpg">
-          <div class="card-body">
-            <div class="card-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore quis corrupti.
-                Laboriosam
-                asperiores debitis
-              </p>
-
-            </div>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-  </section>
   <section>
-    <div class="container-fluid">
-      <div class="forma">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="img/form1.png" class='imgForm img-fluid' alt="">
+        </div>
+        <div class="col-lg-6">
+          <form>
+            <div class="row">
+              <div class="col">
+                <label >Nombre: </label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="col">
+                <label >Apellidos: </label>
+                <input type="text" class="form-control" >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label >Comentarios: </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit" class="btn mt-4">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+  <!--###############################################################################################################-->
+  <!--################################################# Footer ######################################################-->
+  <!--###############################################################################################################-->
+  <section class="footer">
+    <div class="container footer">
+      <div class="iconos  align-self-center ">
+          <i class="social fab fa-google-plus-g text-white"></i>
+          <i class="social fab fa-facebook-f text-white "></i>
+          <i class="social fab fa-twitter text-white "></i>
+          <i class="social fas fa-share-alt text-white"></i>
       </div>
     </div>
   </section>
