@@ -4,7 +4,7 @@ html, body{
     margin: 0;
     padding: 0;
     height: auto;
-    cursor: none;
+    /*cursor: none;*/
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -27,7 +27,7 @@ html, body{
 
 
 .textoGrande{
-    font-size: 80px;
+    font-size: 8vw;
 }
 
 .menu{
