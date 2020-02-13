@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>Ocultar / Mostrar</h1>
+        <button type="button" id="btnOcultar" class="btn btn-primary">Ocultar</button>&nbsp;&nbsp;
+        <button type="button" id="btnMostrar" class="btn btn-primary">Mostrar</button>
+
+        <p id="parrafo1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id error alias odit at sunt! 
+            Animi fugit esse eos facilis sint dicta tempore sequi iste. Sed soluta voluptate suscipit officiis quaerat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam inventore quis illum sunt itaque laborum 
+            sit libero maiores, reiciendis magni id voluptas quasi perferendis mollitia animi, necessitatibus illo! Aut, unde!
+        </p>
+        
+    </div>
+    <div class="container">
+        <h1>Ocultar / Mostrar con retardo</h1>
+        <button type="button" id="btnOcultar2" class="btn btn-primary">Ocultar</button>&nbsp;&nbsp;
+        <button type="button" id="btnMostrar2" class="btn btn-primary">Mostrar</button>
+
+        <p id="parrafo2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id error alias odit at sunt! 
+            Animi fugit esse eos facilis sint dicta tempore sequi iste. Sed soluta voluptate suscipit officiis quaerat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam inventore quis illum sunt itaque laborum 
+            sit libero maiores, reiciendis magni id voluptas quasi perferendis mollitia animi, necessitatibus illo! Aut, unde!
+        </p>
+        
+    </div>
+    <div class="container">
+        <h1>Fade in / fade out/ fade toggle / fade to</h1>
+        <button type="button" id="btnOcultar3" class="btn btn-primary">Ocultar</button>&nbsp;&nbsp;
+        <button type="button" id="btnMostrar3" class="btn btn-primary">Mostrar</button>
+        <button type="button" id="btnInterruptor" class="btn btn-primary">Interruptor</button>
+        <button type="button" id="btnOcultarParte" class="btn btn-primary">Ocultar algo</button>
+        <button type="button" id="btnMostrarParte" class="btn btn-primary">Mostrar algo</button>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img id="img1" class="img-fluid mx-auto" src="https://picsum.photos/id/642/600/400" alt="">
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="container">
+        <h1>Slide up / slide down</h1>
+        <div class="card" style="width: 200px;">
+            <div id="cardTitulo" class="card body">
+                <h4 class="card-title">Titulo de imagen</h4>
+            </div>
+            <img id="cardImagen" class="card-img-bottom" src="https://picsum.photos/id/684/600/400" alt="">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="width: 400px; height: 200px;">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      
+        $(document).ready(function (){
+             //Ocultar y mostrar
+             $("#btnOcultar").click(function (){
+                $("#parrafo1").hide();
+            });
+            $("#btnMostrar").click(function (){
+                $("#parrafo1").show();
+            });
+        
+            //Ocultar y mostrar
+            $("#btnOcultar2").click(function (){
+                $("#parrafo2").hide(1000);
+            });
+            $("#btnMostrar2").click(function (){
+                $("#parrafo2").show(1000);
+            });
+            //Fade in / fade out
+            $("#btnOcultar3").click(function (){
+                $("#img1").fadeOut();
+            });
+            $("#btnMostrar3").click(function (){
+                $("#img1").fadeIn();
+            });
+            //toggle
+            $("#btnInterruptor").click(function (){
+                $("#img1").fadeToggle();
+            });
+            $("#btnOcultarParte").click(function (){
+                $("#img1").fadeTo("slow", 0.4);
+            });
+            $("#btnMostrarParte").click(function (){
+                $("#img1").fadeTo("slow", 1);
+            });
+            $("#cardTitulo").mouseenter(function (){
+                $("#cardImagen").slideDown();
+            });
+            
+        });
+    </script>
+</body>
+</html>
