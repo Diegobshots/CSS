@@ -1,0 +1,5 @@
+.bloqueOculto{
+    position: relative;
+    left: 20px;
+    opacity: 0;
+}
