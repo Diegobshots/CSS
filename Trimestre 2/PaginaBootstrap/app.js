@@ -1,6 +1,7 @@
 let cursorRaton = document.querySelector('.cursor');
 let navItems = document.querySelectorAll('.nav-item ');
 let contacto = document.querySelector('.contact');
+let servicios = document.querySelector('.servicios');
 let home = document.querySelector('.home');
 window.addEventListener('mousemove', cursor);
 
@@ -28,4 +29,7 @@ contacto.addEventListener('click', function(){
 })
 home.addEventListener('click', function(){
     window.location.href = 'index.html';
+})
+servicios.addEventListener('click', function(){
+    window.location.href = 'servicios.html';
 })

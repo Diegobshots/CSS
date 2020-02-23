@@ -7,6 +7,10 @@ html, body{
     cursor: none;
     font-family: 'Nanum Gothic', sans-serif;
 }
+.seccion1, .seccion2, .seccion3, .seccion4{
+    height: 100vh !important;
+    width: 100vw !important;
+}
 input, textArea, button{
     cursor: none !important;
 }
@@ -31,6 +35,7 @@ input, textArea, button{
 
 .textoGrande{
     font-size: 8vw;
+    font-family: 'Lacquer',   !important;
 }
 
 .menu{
