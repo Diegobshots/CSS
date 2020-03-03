@@ -15,6 +15,7 @@ html, body{
 }
 .pagina2{
     background-image: url(./img/homeDerecha.png);
+    background-size: cover;
 }
 .homeIzquierda, .homeDerecha, .section2{
    background-color: rgb(233, 233, 233);
@@ -131,14 +132,13 @@ html, body{
 }
 .imgTitulo{
     position: relative;
-    opacity: 0.5;
 }
 /*###############################################*/
 /*CARRUSEL*/
 /*###############################################*/
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     .foto{
         width: 100vw;
     }
