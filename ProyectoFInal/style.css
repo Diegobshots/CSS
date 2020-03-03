@@ -1,0 +1,128 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home{
+    height: 100vh;
+    width: 100vw;
+}
+.pagina1{
+    height: 100%;
+}
+.homeIzquierda, .homeDerecha{
+   background-color: rgb(233, 233, 233);
+   color: white;
+}
+.homeDerecha{
+    background-image: url(./img/homeDerecha.png);
+}
+
+.hamburger {
+    position: fixed;
+    right: 3vw;
+    top: 2%;
+    height: 30px;
+    width: 30px;
+    padding: 20px 20px;
+    transform: translate3d(0, 0, 0);
+    transition: transform 3s ease-in-out;
+    z-index: 1002;
+    cursor: pointer;            
+}
+._layer {
+    background: #1d1d1d;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    width: 28px;
+    height: 2px;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.25s ease;
+}
+
+.hamburger:hover .-top {
+    transform: translateY(-25%);
+}
+
+.hamburger:hover .-bottom {
+    transform: translateY(25%);
+}
+
+.hamburger.is-active .-top {
+    transform: translateY(100%) rotate(45deg);
+    background-color: rgb(226, 226, 226);
+    height: 3px;
+}
+
+
+
+.hamburger.is-active .-bottom {
+    transform: translateY(-100%) rotate(-45deg);
+    background-color: rgb(226, 226, 226);
+    height: 3px;
+
+}
+
+.menuppal {
+    background-color:rgb(49, 49, 49);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s ease;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal.is-active {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.menuppal ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menuppal ul li {
+    list-style: none;
+    text-align: center;            
+    font-size: 1.5rem;            
+    padding: 20px;
+}
+
+.menuppal ul li a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+.linkHome{
+    transition: .2s ease;
+}
+.linkHome:hover{
+    font-size: 80px;
+    color: rgb(111, 247, 0);
+}
+.linkArtistas{
+    transition: .2s ease;
+}
+.linkArtistas:hover{
+    font-size: 80px;
+    color: rgb(247, 72, 253);
+}
+.linkContacto{
+    transition: .2s ease;
+}
+.linkContacto:hover{
+    font-size: 80px;
+    color: rgb(253, 241, 72);
+}
+.letras{
+    font-size: 50px;
+}
+
+
+
