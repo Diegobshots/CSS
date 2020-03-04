@@ -1,40 +1,24 @@
 
-        //Solución con jQUery
-        $(document).ready(function () {
-            $('.hamburger').click(function () {
-                $('.hamburger').toggleClass('is-active');
-                $('.menuppal').toggleClass('is-active');
-            });
-            //entrada de imagen
-            
-            $('.carousel').slick({
-                centerMode: true,
-                slidesToShow: 3,
-                // infinite: true,
-                speed: 400,
-                cssEase: 'linear',
-                adaptiveHeight: true,
-                responsive: [
-                  {
-                    breakpoint: 768,
-                    settings: {
-                      arrows: true,
-                      centerMode: true,
-                      centerPadding: '40px',
-                      slidesToShow: 3
-                    }
-                  },
-                  {
-                    breakpoint: 482,
-                    settings: {
-                      arrows: false,
-                      centerMode: true,
-                      centerPadding: '40px',
-                      slidesToShow: 1
-                    }
-                  }
-                ]
-              });
+//Solución con jQUery
+$(document).ready(function () {
+  $('.hamburger').click(function () {
+    $('.hamburger').toggleClass('is-active');
+    $('.menuppal').toggleClass('is-active');
+  });
+  //entrada de imagen
 
-            
-        });
+  $('input').focus(function(){
+    $(this).parent().find(".label-txt").addClass('label-active');
+  });
+
+  $("input").focusout(function(){
+    if ($(this).val() == '') {
+      $(this).parent().find(".label-txt").removeClass('label-active');
+    };
+  });
+  $(".imgPortada").toggleClass('imgPortadaVer');
+  $(".textoPortada").toggleClass('textoPortadaVer');
+  $(".artistas").toggleClass('artistasVer');
+  $(".formulario").toggleClass('formularioVer');
+
+});

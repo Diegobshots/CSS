@@ -10,7 +10,7 @@ html, body{
     height: 100vh;
     width: 100vw;
 }
-.pagina1, .pagina2{
+.pagina1, .pagina2, .pagina3{
     height: 100%;
 }
 .pagina2{
@@ -150,6 +150,151 @@ html, body{
 }
 @media screen and (min-width: 1024px) {
     .foto{
-        width: 60vw;
+        width: 50vw;
     }
+}
+
+/*###############################################*/
+/*CONTACTO*/
+/*###############################################*/
+
+.pagina3 {
+    background-image: url(./img/homeDerecha.png);
+    background-size: cover;
+}
+  
+form {
+    width: 80%;
+    max-width: 820px;
+    margin: 60px auto;
+    background: rgba(245,245,245,1);
+    padding: 60px 120px 80px 120px;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    position: relative;
+    margin: 40px 0px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.line-box {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #BCBCBC;
+}
+
+.line {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(104, 126, 255);
+    transition: ease .6s;
+}
+
+input:focus + .line-box .line {
+    width: 100%;
+}
+
+.label-txt {
+    position: absolute;
+    top: -1.6em;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: .8em;
+    letter-spacing: 1px;
+    color: rgb(120,120,120);
+    transition: ease .3s;
+}
+
+.label-active {
+    top: -3em;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgb(220,220,220);
+    font-weight: bold;
+    color: rgb(120,120,120);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease .3s;
+}
+
+button:hover {
+    background: rgb(109, 250, 255);
+    color: #ffffff;
+}
+
+/*###############################################*/
+/*PORTADA EFECTOS*/
+/*###############################################*/
+
+.imgPortada{
+    position: relative;
+    opacity: 0;
+    left: -200px;
+    transition: all 0.5s ease;
+}
+.imgPortadaVer{
+    position: relative;
+    left:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.textoPortada{
+    position: relative;
+    opacity: 0;
+    left: 200px;
+    transition: all 0.5s ease;
+}
+.textoPortadaVer{
+    position: relative;
+    left:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.artistas{
+    position: relative;
+    opacity: 0;
+    top: -200px;
+    transition: all 0.5s ease;
+}
+.artistasVer{
+    position: relative;
+    top:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.formulario{
+    position: relative;
+    opacity: 0;
+    top: -200px;
+    transition: all 0.5s ease;
+}
+.formularioVer{
+    position: relative;
+    top:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.tituloArtistas{
+    font-size: 90px;
 }
