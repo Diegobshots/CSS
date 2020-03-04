@@ -30,8 +30,6 @@ html, body{
 
 .hamburger {
     position: fixed;
-    right: 3vw;
-    top: 2%;
     height: 30px;
     width: 30px;
     padding: 20px 20px;
@@ -40,6 +38,26 @@ html, body{
     z-index: 1002;
     cursor: pointer;            
 }
+
+@media screen and (max-width: 700px) {
+    .hamburger {
+        right: 8%;
+        top: 2%;              
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+    .hamburger {
+        right: 6%;
+        top: 2%;              
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hamburger {
+        right: 3%;
+        top: 2%;              
+    }
+}
+
 ._layer {
     background: #1d1d1d;
     margin-bottom: 4px;
@@ -106,8 +124,12 @@ html, body{
     text-decoration: none;
     color: rgb(230, 230, 230);
 }
+/*###############################################*/
+/*ESTILO MENU DESPLEGABLE*/
+/*###############################################*/
 .linkHome{
     transition: .2s ease;
+    font-family: 'Spartan', sans-serif;
 }
 .linkHome:hover{
     font-size: 80px;
@@ -115,6 +137,7 @@ html, body{
 }
 .linkArtistas{
     transition: .2s ease;
+    font-family: 'Spartan', sans-serif;
 }
 .linkArtistas:hover{
     font-size: 80px;
@@ -122,6 +145,7 @@ html, body{
 }
 .linkContacto{
     transition: .2s ease;
+    font-family: 'Spartan', sans-serif;
 }
 .linkContacto:hover{
     font-size: 80px;
@@ -136,7 +160,14 @@ html, body{
 /*###############################################*/
 /*CARRUSEL*/
 /*###############################################*/
-
+.cita{
+    font-family: 'Spartan', sans-serif;
+    font-size: 10px;
+}
+.cita .nombre{
+    font-family: 'Calligraffitti', cursive; 
+    font-size: 45px ;
+}
 
 @media screen and (max-width: 700px) {
     .foto{
@@ -161,19 +192,34 @@ html, body{
 .pagina3 {
     background-image: url(./img/homeDerecha.png);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
 form {
     width: 80%;
     max-width: 820px;
     margin: 60px auto;
     background: rgba(245,245,245,1);
-    padding: 60px 120px 80px 120px;
     text-align: center;
     -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
     box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
 }
-
+@media screen and (max-width: 700px) {
+    form {
+        padding: 30px 60px 40px 60px;  
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+    form {
+        padding: 40px 100px 60px 80px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    form {
+        padding: 60px 120px 80px 120px; 
+    }
+}
 label {
     display: block;
     position: relative;
@@ -250,31 +296,31 @@ button:hover {
 .imgPortada{
     position: relative;
     opacity: 0;
-    left: -200px;
+    top: -100px;
     transition: all 0.5s ease;
 }
 .imgPortadaVer{
     position: relative;
-    left:0;
+    top:0;
     opacity: 1;
     transition: all 0.5s ease;
 }
 .textoPortada{
     position: relative;
     opacity: 0;
-    left: 200px;
+    top: 100px;
     transition: all 0.5s ease;
 }
 .textoPortadaVer{
     position: relative;
-    left:0;
+    top:0;
     opacity: 1;
     transition: all 0.5s ease;
 }
 .artistas{
     position: relative;
     opacity: 0;
-    top: -200px;
+    top: -100px;
     transition: all 0.5s ease;
 }
 .artistasVer{
@@ -295,6 +341,9 @@ button:hover {
     opacity: 1;
     transition: all 0.5s ease;
 }
+
 .tituloArtistas{
-    font-size: 90px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 8vw;
+    color: black;
 }

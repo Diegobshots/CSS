@@ -20,5 +20,6 @@ $(document).ready(function () {
   $(".textoPortada").toggleClass('textoPortadaVer');
   $(".artistas").toggleClass('artistasVer');
   $(".formulario").toggleClass('formularioVer');
+  //$(".tituloArtistas").toggleClass('tituloArtistasVer');
 
 });
