@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--JQUERY-->
+    <!--el código JQUERY siempre va dejabo de la librería.-->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <script>
+    
+        $(document).ready(function(){
+
+            //ocultar y mostrar
+            $("#boton1").click(function(){
+                $("#contenido1").hide();
+            }); 
+
+            $("#boton2").click(function(){
+                $("#contenido1").show();
+            });
+
+
+            //ocultar y mostrar con tiempo
+            $("#boton3").click(function(){
+                $("#contenido2").hide(1000);
+            }); 
+
+            $("#boton4").click(function(){
+                $("#contenido2").show(1000);
+            });
+
+
+            //mostrar ocultar imagen
+            $("#btnOcultar").click(function(){
+                $("#img1").fadeOut(2000);
+                //$("#img1").fadeout("slow");
+                //$("#img1").fadeout(2000);
+            }); 
+
+            $("#btnMostrar").click(function(){
+                $("#img1").fadeIn(4000);
+                //$("#img1").fadein("slow");
+                //$("#img1").fadein(4000);
+            });
+
+            $("#btnInterruptor").click(function(){
+                $("#img1").fadeToggle("slow");
+            });
+
+            $("#btnOcultarParte").click(function(){
+                $("#img1").fadeTo("slow", 0.4);
+            });
+
+            $("#btnMostrarParte").click(function(){
+                $("#img1").fadeTo("slow", 1);
+            });
+
+            //slide
+            $("#cardTitulo").mouseenter(function(){
+                $("#cardImagen").slideDown();
+            });
+
+            $("#cardTitulo").mouseleave(function(){
+                $("#cardImagen").slideUp();
+            });
+
+        });
+    </script> 
+</head>
+<body>
+    
+
+    </script>
+    <h1>Ocultar/Mostrar</h1>
+    <button id="boton1">Ocultar</button>
+    <button id="boton2">Mostrar</button>
+    <div id="contenido1"><p>Hola soy un texto.</p></div>
+
+    <h1>Ocultar/Mostrar con tiempo</h1>
+    <button id="boton3">Ocultar</button>
+    <button id="boton4">Mostrar</button>
+    <div id="contenido2"><p>Hola soy un texto.</p></div>
+
+    <h1>Fade in/Fade out/Fade Toggle/Fade to</h1>
+    <button id="btnOcultar" class="btn bg-primary">Ocultar</button>
+    <button id="btnMostrar" class="btn bg-info">Mostrar</button>
+    <button id="btnInterruptor" class="btn bg-warning">Interruptor</button>
+    <button id="btnOcultarParte" class="btn bg-success">Ocultar algo</button>
+    <button id="btnMostrarParte" class="btn bg-secondary">Mostrar algo</button>
+    <br><br>
+    <img id="img1" src="https://picsum.photos/id/1020/200/200" alt="">
+
+    <h1>Slide up/Slide down</h1>
+    <div class="card" style="width: 200px;">
+        <div id="cardTitulo" class="card-body">
+            <h4 class="card-title">Imagen</h4>
+        </div>
+        <img id="cardImagen" class="card-img-bottom" src="https://picsum.photos/id/598/200/200" alt="">
+    </div>
+
+    <div style="height: 800px; width: 100%;"></div> <!--Si no pongo nada debajo se mueve y el ratón no se posiciona en el div, por lo que no para de moverse.-->
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--JQUERY-->
+    <!--el código JQUERY siempre va dejabo de la librería.-->
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        
+        .auxiliar{
+            position: fixed;
+            z-index: 1;
+            top:50px;
+            left: 0px;
+            height: 400px;
+            width: 300px;
+            background-color: black;
+        }
+
+
+        .bloqueOculto {
+            position: relative;
+            left: -1600px;
+            transition: 2s all ease;
+            margin: 50px;
+            padding: 50px;
+            background-color: tomato;
+        }
+        
+    </style>
+
+    <script>
+        $(function () {
+            /*Cuando se hace scroll*/
+            $(window).scroll(function () {
+
+                /*Creamos una función para cada bloque*/
+                $('.bloqueOculto').each(function () {
+
+                    var auxiliar = $('.auxiliar').offset().top + $('.auxiliar').outerHeight();;
+
+                    /*Sacamos las coordenadas de cada objeto y de la ventana*/
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    var top_of_object = $(this).offset().top;
+                    var top_of_window = $(window).scrollTop();
+                    var objetoLeft = $(this).offset().left;
+
+                    /* Lo hacemos visible si la altuta de la ventana es mauor que la coordenada x del*/
+                    if (auxiliar > bottom_of_object ) {
+                        $(this).css({left:"0px"})
+                    }
+
+
+
+
+                })
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Animar a la izquierda</h1>
+
+    <div class="auxiliar">
+
+    </div>
+
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+    <div class="bloqueOculto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium enim sunt deserunt, labore iste,
+        dignissimos officia vitae provident culpa molestiae natus neque maiores reiciendis dolor delectus quasi dicta
+        perferendis cumque aspernatur nulla? Perferendis accusamus, delectus nemo atque sed cupiditate sunt.
+    </div>
+</body>
+
+</html>

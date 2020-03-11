@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+   <!--JQUERY-->
+   <!--el código JQUERY siempre va dejabo de la librería.-->
+   <script src="jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            //Animacion 1
+            $("#btnAnimar").click(function(){
+                $("#capa").animate({
+                    left: '250px',
+                    height: '250px',
+                    width: '250px'
+                });
+            });
+
+            //Animación 2
+            $("#btnAnimar2").click(function(){
+                var ancho = $("#capa2").innerWidth(); /*sacar el ancho que tiene en ese momento/sacar una propiedad del css*/
+                var opacidad = $("#capa2").css('opacity'); /*sacar la opacidad que tiene en ese momento/sacar una propiedad del css*/
+                if(ancho > 1000){
+                    
+                    $("#capa2").animate({
+                    width: "70%",
+                    opacity: 0.4,
+                    marginLeft: "150px",
+                    fontSize: "3em",
+                    borderWidth: "10px"
+                }, 2500) /*Tiempo*/
+
+                }else{
+                    $("#capa2").animate({
+                    width: "100%",
+                    opacity: 1,
+                    marginLeft: "150px",
+                    fontSize: "1em",
+                    borderWidth: "10px"
+                }, 2500) /*Tiempo*/
+
+                }
+                
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button id="btnAnimar" class="btn bg-primary">Animar</button>
+        <br>
+        <br>
+        <div id="capa" class="jumbotron">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <br>
+        <button id="btnAnimar2" class="btn bg-primary">Animar</button>
+        <br>
+        <br>
+        <div id="capa2" class="border">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    
+    </div>
+</body>
+</html>

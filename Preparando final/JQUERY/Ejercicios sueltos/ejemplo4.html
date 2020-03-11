@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!--JQUERY-->
+  <!--el código JQUERY siempre va dejabo de la librería.-->
+  <script src="jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+    <style>
+       
+
+        .imagenPrincipal img{
+            width: 100%;
+        }
+
+        #imagen{
+            position: relative;
+            height: 100%;
+            background-image: url();
+            
+
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $("#bajar").click(function(){
+                $('html, body').animate({
+                    scrollTop:$("#parar").offset().top
+                },2000);
+            })
+
+            $("#subir").click(function(){
+                $('html, body').animate({
+                    scrollTop:$("#imagen").offset().top
+                },2000);
+            })
+
+        })
+    </script>
+</head>
+<body>
+    
+
+    <div id="imagen vh-100">
+       <div id="bajar"> <img src="https://picsum.photos/id/231/30/30" alt=""></div>
+    </div>
+    <div id="parar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae voluptate exercitationem nisi hic unde, debitis non, natus vitae quos minima similique vel. Quidem, consequuntur magni maxime eligendi repellat placeat.</p>
+    </div>
+</body>
+</html>
